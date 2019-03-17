@@ -1,2 +1,2 @@
-# lingziyb.github.io
-hexo blog
+# hexo-blog
+hexo-blog

@@ -6,6 +6,7 @@
     "version": "3.9.0"
   },
   "scripts": {
+    "dev": "hexo clean && hexo s",
     "publish": "hexo clean && hexo d -g"
   },
   "dependencies": {

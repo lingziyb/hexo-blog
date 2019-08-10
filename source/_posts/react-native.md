@@ -11,9 +11,11 @@ categories:
 
 
 ### 记录开始
+
 > 公司要做一个APP产品，自己会些皮毛，所以在开发的过程中还是遇到了比较多的问题（比如，一开始就安装不上啊，各种报红啊，怎么排查问题啊，轮播插件不响应啊，typescript不怎么会写啊...等等等）。顺便把mbox和typescript给融合进去了。
 
 ### 环境说明
+
 windows系统
 android studio安卓模拟器 / 安卓手机
 
@@ -41,7 +43,7 @@ android studio安卓模拟器 / 安卓手机
 
     // 然后版本更新到："@types/react-native": "^0.60.0"
     export function create<T extends NamedStyles<T> | NamedStyles<any>>(styles: T | NamedStyles<T>): T;
-    ``` 
+    ```
 
 3. 报错：` Unhandled JS Exception: TypeError: undefined is not an object (evaluating 'this._subscribableSubscriptions.forEach') `
 

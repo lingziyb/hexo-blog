@@ -1,6 +1,7 @@
 ---
 title: react-native遇坑的陈列
 date: 2019-07-07 14:34:24
+author: lingzi
 tags: 
     - app
     - react-native 
@@ -28,7 +29,7 @@ android studio安卓模拟器 / 安卓手机
     - 解决方案一，改源码。
     参考：https://github.com/microsoft/vscode-react-native/issues/379
 
-    ``` 
+    ```javascript
     // 源码
     export function create<T extends NamedStyles<T> | NamedStyles<any>>(styles: T): T;    
     // 改进后的：
@@ -37,7 +38,7 @@ android studio安卓模拟器 / 安卓手机
 
     - 解决方案二，版本更新，最新版已修复此问题。（一开始我不知道已有版本不是最新版...）
      
-    ``` 
+    ```javascript
     // 因为之前装的版本是："@types/react-native": "0.57.63"
     export function create<T extends NamedStyles<T> | NamedStyles<any>>(styles: T): T;
 
@@ -49,7 +50,7 @@ android studio安卓模拟器 / 安卓手机
 
     解决方案：
 
-    ```
+    ```javascript
     // package.json文件里加上
     "resolutions": {
         "uglify-es": ">=3.3.4"
@@ -76,7 +77,7 @@ android studio安卓模拟器 / 安卓手机
     
     解决方案：对list数组进行判断。(注：加下面四句代码就行了)
     
-    ```
+    ```javascript
     render() {
         if (HomeStore.list.length > 0) {     // ++++++++ 对list数组进行判断
             return (

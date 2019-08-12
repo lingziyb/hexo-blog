@@ -1,8 +1,13 @@
 # hexo blog
 
+### 新建文章
+```javascript 
+    hexo new "xxx" 
+```
+
 ### 新建页面
 ```javascript 
-    hexo new page "about" 
+    hexo new page "xxx" 
 ```
 
 ### 本地服务

@@ -1,5 +1,9 @@
 ---
 title: {{ title }}
 date: {{ date }}
-tags:
+author: lingzi
+tags: 
+    - vue 
+categories: 
+    - 技术
 ---

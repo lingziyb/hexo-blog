@@ -1,6 +1,6 @@
 ---
 title: react-native遇坑的陈列-2
-date: 2019-08-12 15:18
+date: 2019-08-12 15:18:18
 author: lingzi
 tags: 
     - app
@@ -11,9 +11,11 @@ categories:
 ---
 
 ### 记录开始
+
 > 继上一篇继续
 
 ### 环境说明
+
 react：16.8.3
 react-native：0.59.9
 react-navigation：3.11.0

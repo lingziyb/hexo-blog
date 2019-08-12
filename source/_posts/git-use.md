@@ -12,18 +12,18 @@ date: 2019-08-12 17:37:59
 ####  1. 远程仓库
 
 - 从远程库克隆
-```
+```javascript
 git clone git@server-name:path/repo-name.git
 ```
 
 - 关联远程库
-```
+```javascript
 git remote add origin git@server-name:path/repo-name.git
 ```
 
 #### 2. 推送
 
-```
+```javascript
 git push origin master
 ```
 

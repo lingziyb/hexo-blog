@@ -2,22 +2,40 @@
 
 ### 新建文章
 ```javascript 
-    hexo new "xxx" 
+hexo new "xxx" 
 ```
 
 ### 新建页面
 ```javascript 
-    hexo new page "xxx" 
+hexo new page "xxx" 
 ```
 
 ### 本地服务
-``` 
-    npm run dev 
+``` bash
+npm run dev 
 ```
 
 ### 发布
-``` 
-    npm run publish 
+``` bash
+npm run publish 
+```
+
+### Run server
+
+``` bash
+hexo server
+```
+
+### Generate static files
+
+``` bash
+hexo generate
+```
+
+### Deploy to remote sites
+
+``` bash
+hexo deploy
 ```
 
 

@@ -1,7 +1,6 @@
 # hexo blog
-hexo blog
 
-## 新建页面
+### 新建页面
 ```javascript 
     hexo new page "about" 
 ```

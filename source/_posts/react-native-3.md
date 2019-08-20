@@ -54,7 +54,7 @@ export https_proxy=http://127.0.0.1:1087
 git 误删分支恢复方法：[https://blog.csdn.net/new03/article/details/84920771](https://blog.csdn.net/new03/article/details/84920771)
 
 5. 友盟第三方微信分享，唤起微信授权后不走回调。
-问题解决：回调包wxapi这个文件夹要放在项目包酱人里面（之前是跟jiangren平级的）。
+问题解决：回调包wxapi这个文件夹要放在项目包酱人（说明：酱人是我们项目的名称）里面（之前是跟jiangren平级的）。
 ![image.png](https://upload-images.jianshu.io/upload_images/3453108-a7901361fd38e8fc.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 6. git提交了过大的文件  导致push报错

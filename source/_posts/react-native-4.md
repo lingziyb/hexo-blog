@@ -1,16 +1,17 @@
 ---
-title: react-native遇坑的陈列-4
-date: 2019-08-20 22:04
+title: react-native
+date: 2019-08-12 15:18
 tags: 
     - app
     - react-native 
+    - typescript
 categories: 
     - 技术
 ---
 
 ### 记录开始
 
-> 第四篇react-native 问题记录。
+> 第三篇react-native 问题记录。
 
 ### 环境说明
 
@@ -45,6 +46,7 @@ iOS：200
 
 ![image.png](https://upload-images.jianshu.io/upload_images/3453108-20d501cc8f027ba8.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
+官网API参考链接：[ react-native 的 Image](https://facebook.github.io/react-native/docs/image)
 
 
 

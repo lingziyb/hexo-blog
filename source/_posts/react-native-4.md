@@ -25,7 +25,7 @@ xcode iphone模拟器 / iphone
 
 ### 记录罗列
 
-1. 发签名不一样。本地开发打包和给测试人员打包的签名不一样，导致调微信直接提示‘签名不一样’。
+1. 签名不一样。本地开发打包和给测试人员打包的签名不一样，导致调微信直接提示‘签名不一样’。
 
 解决方案如图所示：
 ![4D056DEE-EA42-4901-B4E2-1414528222B3.png](https://upload-images.jianshu.io/upload_images/3453108-30222aa36373603d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)

@@ -100,8 +100,16 @@ Yarn global command not working：[https://stackoverflow.com/questions/40317578/
     解决方法：
     `rm -rf node_modules/ && yarn cache clean && yarn install`
 
-14. Lottie-react-native，设计师用 AE 导出 json 文件也太坑了吧，在 iOS 上那一个黑的三角形出不来（安卓正常），我把 json 里这个把这个[0,0,0,0] 改成了 [0,0,0,1] 就出来了。
-    ![image.png](https://upload-images.jianshu.io/upload_images/3453108-e1f616aa007dc056.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+14. Lottie-react-native，设计师用 AE 导出 json 文件也太坑了吧，在 iOS 上那一个黑的三角形出不来（安卓正常）。左边安卓，右边 iOS。
+    ![image.png](https://upload-images.jianshu.io/upload_images/3453108-e31578db69b54e6f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+我把 json 里这个把这个[0,0,0,0] 改成了 [0,0,0,1] 就出来了。
+![image.png](https://upload-images.jianshu.io/upload_images/3453108-7790654cfbae8374.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+json 文件格式化一下：
+![image.png](https://upload-images.jianshu.io/upload_images/3453108-66f8286710966320.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+iOS 上黑色三角形就出来了。
+![image.png](https://upload-images.jianshu.io/upload_images/3453108-e1f616aa007dc056.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 Lottie json 文件 预览：https://lottiefiles.com/preview
 

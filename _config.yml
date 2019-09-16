@@ -3,12 +3,12 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: lingzi 
+title: lingzi
 subtitle: lingzi
 description: 风景这边独好，阅人无数不如行万里路
-keywords: 
+keywords:
 author: lingzi
-language: zh-CN 
+language: zh-CN
 timezone:
 
 # URL
@@ -35,7 +35,7 @@ titlecase: false # Transform title into titlecase
 external_link: true # Open external links in new tab
 filename_case: 0
 render_drafts: false
-post_asset_folder: false
+post_asset_folder: true
 relative_link: false
 future: true
 highlight:
@@ -43,11 +43,11 @@ highlight:
   line_number: true
   auto_detect: false
   tab_replace:
-  
+
 prism_plugin:
-  mode: 'preprocess'    # realtime/preprocess
-  theme: 'tomorrow'
-  line_number: false    # default false
+  mode: "preprocess" # realtime/preprocess
+  theme: "tomorrow"
+  line_number: false # default false
   custom_css:
 
 # Home page setting
@@ -55,10 +55,10 @@ prism_plugin:
 # per_page: Posts displayed per page. (0 = disable pagination)
 # order_by: Posts order. (Order by date descending by default)
 index_generator:
-  path: ''
+  path: ""
   per_page: 10
   order_by: -date
-  
+
 # Category & Tag
 default_category: uncategorized
 category_map:
@@ -87,8 +87,7 @@ deploy:
   type: git
   repo: https://github.com/lingziyb/lingziyb.github.io.git
   branch: master
-  message: 
-
+  message:
 
 # search
 search:

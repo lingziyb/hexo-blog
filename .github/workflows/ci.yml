@@ -1,0 +1,26 @@
+name: publish blog
+
+on: [push]
+
+jobs: 
+  build:
+    runs-on: ubuntu-latest
+    steps: 
+      - uses: actions/checkout@v1
+      - name: Setup node
+        uses: actions/setup-node@v1
+        with: 
+          node-version: "12.x"
+      - name: Build blog
+        run: 
+          npm install
+          npm install -g hexo-cli
+          npm run build
+      - uses: manyuanrong/setup-ossutil@v1.0
+        with:
+          endpoint: "oss-cn-hongkong.aliyuncs.com"
+          access-key-id: ${{secrets.ACCESS_KEY_ID}}
+          access-key-secret: ${{secrets.ACCESS_KEY_SECRET}}
+      - name: Deploy To OSS
+      - run: ossutil cp -rf public oss://lingzi-hexo-blog/
+

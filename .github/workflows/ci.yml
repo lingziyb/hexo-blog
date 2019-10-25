@@ -1,4 +1,4 @@
-name: PublishBlog
+name: publish blog
 
 on: [push]
 
@@ -21,5 +21,5 @@ jobs:
           access-key-id: ${{secrets.ACCESS_KEY_ID}}
           access-key-secret: ${{secrets.ACCESS_KEY_SECRET}}
       - name: Deploy To OSS
-        run: ossutil cp public oss://lingzi-hexo-blog/ -rf
+        run: ossutil cp -rf public oss://lingzi-hexo-blog/ 
 

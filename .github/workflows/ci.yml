@@ -1,4 +1,4 @@
-name: publish blog
+name: PublishBlog
 
 on: [push]
 
@@ -11,7 +11,7 @@ jobs:
         with: 
           node-version: "12.x"
       - name: Build blog
-        run: 
+        run: |
           npm install
           npm install -g hexo-cli
           hexo generate -f

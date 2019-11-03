@@ -5,19 +5,19 @@ menu:
     url: /
     icon: fa-home
   Tags:
-    url: /tags
+    url: /tags/index.html
     icon: fa-tags
   Categories:
-    url: /categories
+    url: /categories/index.html
     icon: fa-bookmark
   Archives:
-    url: /archives
+    url: /archives/index.html
     icon: fa-archive
   About:
-    url: /about
+    url: /about/index.html
     icon: fa-user-circle-o
   Friends:
-    url: /friends
+    url: /friends/index.html
     icon: fa-address-book
 
 # Index cover carousel configuration.

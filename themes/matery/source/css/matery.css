@@ -164,7 +164,8 @@ mark {
 }
 
 .bg-color {
-    background-image: linear-gradient(to right, #ceebfd 0%,#14dac9 20%, #14dac9 60%, #ceebfd 100%);
+    background-image: linear-gradient(to right, #14dac9 20%, #14dac9 100%);
+    /* background-image: linear-gradient(to right, #ceebfd 0%,#14dac9 20%, #14dac9 60%, #ceebfd 100%); */
     /* background-image: linear-gradient(to right, #ceebfd 0%, #1bc4fb 20%, #14dac9 40%, #a1d7b5 50%,#1bc4fb 55%, #14dac9 60%, #a1d7b5 65%,#1bc4fb 70%, #14dac9 75%, #a1d7b5 80%, #e8e0d3 100%); */
 }
 

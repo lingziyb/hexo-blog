@@ -7,6 +7,7 @@
   },
   "scripts": {
     "dev": "hexo clean && hexo s",
+    "dev-with-html-prefix": "node -r ./hack-hexo.js node_modules/hexo/bin/hexo s",
     "build": "hexo generate -f",
     "build-with-html-prefix": "node -r ./hack-hexo.js node_modules/hexo/bin/hexo g -f",
     "publish": "hexo clean && hexo d -g"

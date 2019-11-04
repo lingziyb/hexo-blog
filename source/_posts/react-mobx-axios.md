@@ -25,11 +25,11 @@ date: 2018-08-06 00:13
   yarn start   //或者npm start
 ```
 此时浏览器会自动访问 [http://localhost:3000/](http://localhost:3000/)，你会看到一个 `react` 的欢迎界面，如下：代表你的项目已经正常运行了。
-![运行后的页面.png](https://upload-images.jianshu.io/upload_images/3453108-f38133efa6bc8f67.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![运行后的页面.png](./1.jpg)
 
 ##三、配置项
 #### 1. 展开配置项
-![配置项打开前.png](https://upload-images.jianshu.io/upload_images/3453108-454a0f8629760594.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![配置项打开前.png](./2.jpg)
 
 
 虽然项目已经运行，但是在项目目录里是找不到`webpack`配置项的。比如，我们想配置less、配置alias别名，这时我们需要做一个操作：展开项目（`eject`）[ 注：这个一个不可逆过程，一旦你执行了，就不能回到初始化 ] 。
@@ -38,7 +38,7 @@ date: 2018-08-06 00:13
 ```
 再看项目结构，此时已多了一些其他目录，展开`config`目录，里面就有`webpack`配置文件以及其他各种配置，如下：
 
-![配置项打开后.png](https://upload-images.jianshu.io/upload_images/3453108-32eb372263c43fca.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![配置项打开后.png](./3.jpg)
 
 #### 2. `less`配置
 
@@ -212,11 +212,11 @@ export default App;
 ```
 此时首页长相：
 
-![首页.png](https://upload-images.jianshu.io/upload_images/3453108-225a7ce8aa496ba7.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![首页.png](./4.jpg)
 
 此时about页长相：
 
-![about页](https://upload-images.jianshu.io/upload_images/3453108-aa50ad477b1b538c.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![about页](./5.jpg)
 
 ## 五、添加数据管理`mobx`
 #### 1. 按照依赖
@@ -340,11 +340,11 @@ export default About;
 ```
 这是现在的首页：【数据变了哟】
 
-![首页.png](https://upload-images.jianshu.io/upload_images/3453108-84f252907bc6b884.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![首页.png](./6.jpg)
 
 这是现在的about页：【数据变了哟】
 
-![about页.png](https://upload-images.jianshu.io/upload_images/3453108-c236fb5d5b0007d5.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![about页.png](./7.jpg)
 
 
 ## 六、数据请求`axios`
@@ -420,11 +420,11 @@ export default Home;
 ```
 此时首页长相：【页面没有优化，请将就看】
 
-![首页.png](https://upload-images.jianshu.io/upload_images/3453108-a0e196e2a8e6fe59.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![首页.png](./8.jpg)
 
 此时about页长相：【页面没有优化，请将就看】
 
-![about页.png](https://upload-images.jianshu.io/upload_images/3453108-72ebf4e71bdd322d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![about页.png](./9.jpg)
 
 
 哇！终于写完了。

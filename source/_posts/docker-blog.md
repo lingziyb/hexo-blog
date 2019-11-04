@@ -106,7 +106,7 @@ script:
 docker pull imagename
 ```
 **注：如果`dockerhub`平台里`imagename`设置为`private`，如下图所示，就要先登录：`docker login -u username -p password `，才能拉取镜像。**
-![repository设置.png](https://upload-images.jianshu.io/upload_images/3453108-e570f97e94448457.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![repository设置.png](./1.jpg)
 
 
 - 在服务器上创建容器并运行
@@ -118,7 +118,7 @@ docker run --name dockername -d -p 83:83 imagename
 // -p 端口映射，格式为：主机(宿主)端口:容器端口
 ```
 现在访问服务器的`83`端口，应该就能看到东西了。这就是我博客的首页了。
-![首页.png](https://upload-images.jianshu.io/upload_images/3453108-eb583a1f2469de09.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![首页.png](./2.jpg)
 
 
 

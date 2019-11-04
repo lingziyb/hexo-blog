@@ -10,7 +10,7 @@ date: 2016-10-28 22:36
 ---
 
 
-![image](https://upload-images.jianshu.io/upload_images/3453108-2f91743c21d81981.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![image](./1.jpg)
 
 这幅画  虽然很简陋  但是它开启了我的写作之路...
 

@@ -60,7 +60,7 @@ android studio安卓模拟器 / 安卓手机
 
 4. 不打开debug一切正常，当打开debug时报错：` window.deltaUrlToBlobUrl is not a function `。
 
-    ![error.png](https://upload-images.jianshu.io/upload_images/3453108-ed976ab7e78b9bc4.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+    ![error.png](./1.jpg)
     
     解决方案：localhost 改成 ip 地址。
     
@@ -68,7 +68,7 @@ android studio安卓模拟器 / 安卓手机
 
 5. react-native-swiper，scrollBy用法。
 
-   ![image.png](https://upload-images.jianshu.io/upload_images/3453108-723338ec09f20cf1.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+   ![image.png](./2.jpg)
 
 6. react-native-swiper，轮播数据用map循环动态渲染，onIndexChanged 只执行一次：
 

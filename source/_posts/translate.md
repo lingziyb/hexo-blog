@@ -22,6 +22,6 @@ date: 2019-09-01 22:42:28
 
 准确说从晚7点半开始，到晚十点半，竟然连一半都没有。啊啊啊啊。
 
-![啊啊.gif](https://upload-images.jianshu.io/upload_images/3453108-b82dfa06a6a27c92.gif?imageMogr2/auto-orient/strip)
+![啊啊.gif](./1.jpg)
 
 发个说说  写篇文章  睡觉觉。

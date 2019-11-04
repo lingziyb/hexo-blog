@@ -57,7 +57,7 @@ android studio / xcode
     - [ios cocoaPods 安装和 更新](https://www.jianshu.com/p/986781e339b1)
 
 2.  `pod` 已经安装成功，这下可以执行 `pod install` 了吧，结果：
-    ![image.png](https://upload-images.jianshu.io/upload_images/3453108-7386e6333b94c424.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+    ![image.png](./1.jpg)
     咦，这又是咋回事？
     原来是要先 `pod init`。
 
@@ -66,17 +66,17 @@ android studio / xcode
     - [Cannot Install Cocoapods - No podfile found in the project directory](https://stackoverflow.com/questions/36902497/cannot-install-cocoapods-no-podfile-found-in-the-project-directory)
 
 3.  执行 `pod init` ，又出现问题：
-    ![image.png](https://upload-images.jianshu.io/upload_images/3453108-3b64e16fc8b15f63.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+    ![image.png](./2.jpg)
 
     原来是要指定项目：`pod init myApp.xcodeproj`
     好，这下，再执行 `pod install` ，succeed。
 
 4.  再 Xcode 上 运行项目，报了一大堆的错。看都看不懂。
-    ![image.png](https://upload-images.jianshu.io/upload_images/3453108-bd58539440ef56d0.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+    ![image.png](./3.jpg)
 
-    ![image.png](https://upload-images.jianshu.io/upload_images/3453108-ccfabecd7612c27f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+    ![image.png](./4.jpg)
 
-    ![image.png](https://upload-images.jianshu.io/upload_images/3453108-6457c742179a55f0.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+    ![image.png](./5.jpg)
 
     最后解决了，虽然过程有点艰辛。解决办法是，`podfile` 完善如下（注意：AwesomeProject => 换成你自己的项目名）：
 
@@ -113,5 +113,5 @@ end
 ### 总结
 
 现在已经了解 iOS 的 pod 的使用了。后续装第三方插件的时候，比如：`react-native-video`，直接 `react-native link react-native-video`，`podfile` 里面就已经有这句了，不用自己写的 。
-![image.png](https://upload-images.jianshu.io/upload_images/3453108-19cfa30a8d2f58fa.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![image.png](./6.jpg)
 然后再执行 `pod install` ，再运行 Xcode 项目就完事了。

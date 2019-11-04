@@ -55,7 +55,7 @@ android studio安卓模拟器 / 安卓手机
 4. 轮播插件：react-native-swiper。
 遇到的问题是：onIndexChanged事件以及scrollBy都不怎么听话，各种问题（比如onIndexChanged时index索引可以为负数..），经常拆东墙补西墙。
 最终问题点就在于一个：设置key！所有问题消失无踪影。
-![image.png](https://upload-images.jianshu.io/upload_images/3453108-b30ace3d6018b40e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![image.png](./1.jpg)
 
 
 

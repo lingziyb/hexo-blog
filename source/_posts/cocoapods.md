@@ -22,10 +22,10 @@ date: 2019-09-16 20:38:36
 ### 问题的进一步详细描述
 上面也说了没有 ```pod``` 相关文件，啥意思？到底应该有还是没有？
 我尝试按照正常流程初始化项目： ``` react-native init AwesomeProject ```，是0.60.0版本。iOS目录如下：
-![0.60版本.png](https://upload-images.jianshu.io/upload_images/3453108-8d7151757525a4d6.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![0.60版本.png](./1.jpg)
 
 而当初我用的是0.59版本，因为无意间升级到0.60版本，因为那时60版才出来几天，不太稳定，在我的项目里面有些问题，所以我又指定版本到59版了： ``` react-native init AwesomeProject --version 0.59.9 ```。iOS目录如下：
-![0.59.9.png](https://upload-images.jianshu.io/upload_images/3453108-a24e7d4dbce25165.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![0.59.9.png](./2.jpg)
 
 竟然没有```pod```相关任何东东，这就导致我的问题比常人多，而且我对 ios pod 完全陌生。
 
@@ -51,7 +51,7 @@ android studio / xcode
     - [ios cocoaPods 安装和 更新](https://www.jianshu.com/p/986781e339b1)
 
 2. ```pod``` 已经安装成功，这下可以执行 ```pod install``` 了吧，结果：
-![image.png](https://upload-images.jianshu.io/upload_images/3453108-7386e6333b94c424.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![image.png](./3.jpg)
 咦，这又是咋回事？
 原来是要先 ```pod init```。
 
@@ -59,17 +59,17 @@ android studio / xcode
     - [Cannot Install Cocoapods - No podfile found in the project directory](https://stackoverflow.com/questions/36902497/cannot-install-cocoapods-no-podfile-found-in-the-project-directory)
 
 3. 执行 ```pod init``` ，又出现问题：
-![image.png](https://upload-images.jianshu.io/upload_images/3453108-3b64e16fc8b15f63.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![image.png](./4.jpg)
 
 原来是要指定项目：```pod init myApp.xcodeproj```
 好，这下，再执行 ```pod install``` ，succeed。
 
 4. 再Xcode上 运行项目，报了一大堆的错。看都看不懂。
-![image.png](https://upload-images.jianshu.io/upload_images/3453108-bd58539440ef56d0.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![image.png](./5.jpg)
 
-![image.png](https://upload-images.jianshu.io/upload_images/3453108-ccfabecd7612c27f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![image.png](./6.jpg)
 
-![image.png](https://upload-images.jianshu.io/upload_images/3453108-6457c742179a55f0.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![image.png](./7.jpg)
 
 最后解决了，虽然过程有点艰辛。解决办法是，```podfile``` 完善如下（注意：AwesomeProject => 换成你自己的项目名）：
 ```
@@ -103,7 +103,7 @@ end
 
 ###  总结
 现在已经了解iOS的pod的使用了。后续装第三方插件的时候，比如：```react-native-video```，直接 ```react-native link react-native-video```，```podfile``` 里面就已经有这句了，不用自己写的 。
-![image.png](https://upload-images.jianshu.io/upload_images/3453108-19cfa30a8d2f58fa.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![image.png](./8.jpg)
 然后再执行 ```pod install``` ，再运行Xcode项目就完事了。
 
 

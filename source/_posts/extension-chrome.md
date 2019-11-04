@@ -18,7 +18,7 @@ js就要注意了！！
 
 按照下面两种错误方式会出现如图错误：
 
-![error.png](http://upload-images.jianshu.io/upload_images/3453108-e77914c843d400fe.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![error.png](./1.jpg)
 
 ```javascript
 错误做法1：
@@ -67,8 +67,8 @@ document.getElementById('test').onclick = function () {
 教你们一招特别高效的办法，我以前都不知道，这次才发现的额！
 1、点击图上红色框内按钮----选择你的插件所在的文件夹----确认。
 
-![例1.png](http://upload-images.jianshu.io/upload_images/3453108-d86c6e663230a8aa.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![例1.png](./2.jpg)
 2、完成后如下图所示。
 
-![例2.png](http://upload-images.jianshu.io/upload_images/3453108-c894f3b421b8a842.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![例2.png](./1.jpg)
 3、插件可以运行成功。最重要的是，当你改了代码，直接刷新下浏览器或者点插件或者点重新加载，都可以看到已改过的内容，超级方便。我以前还傻傻的跑去打包扩展程序，然后傻傻的把.crx文件拖到浏览器插件页里运行看效果。超级笨哇，都没有发现上面这个超级方便的东东。

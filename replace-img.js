@@ -13,7 +13,7 @@ const files = fs.readdirSync("./source/_posts", {
 });
 
 files.forEach((file, index) => {
-  if (index > 0) return;
+  // if (index > 0) return;
   if (file.isFile()) {
     replaceFile(file);
   }
@@ -27,10 +27,10 @@ async function replaceFile(file, index = 0) {
   const fileData = fs.readFileSync(_path, "utf8");
   const dirName = path.basename(file.name, ".md");
 
-  if( !fileData.match(regexOne) )return;
+  if (!fileData.match(regexOne)) return;
 
   const url = fileData.match(regexOne)[0];
-  console.log(777, url, !url );
+  console.log(777, url, !url);
 
   await download(url, dirName, index);
   replaceFile(file, index);
@@ -43,7 +43,10 @@ function download(url, dirName = "test", imgFileName = "1") {
 
     HTTP.get(url, response => {
       let imgData = "";
+      console.log(123, response.statusCode, response.headers.location);
       response.setEncoding("binary");
+      if (response.statusCode == 301)
+        download(response.headers.location, dirName, imgFileName);
 
       response.on("data", chunk => {
         imgData += chunk;

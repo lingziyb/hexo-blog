@@ -16,12 +16,12 @@ date: 2017-12-08 16:50
 > 活动策划人员策划这个抽奖页面，用于app内。
 当时，这个转盘布局我踩坑了，我本以为这么简单的布局应该不用绝对定位的，是我想多了！然后改为绝对定位来实现，因为要简单些。
 
-![抽奖转盘](http://upload-images.jianshu.io/upload_images/3453108-d3d4ecbe2309e96e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![抽奖转盘](./1.jpg)
 
 
 ##### 一、九个格子和开始按钮，页面布局的实现思路
 这个用绝对定位，小格子相对于大转盘定位，这个我就给个简单例子就好了哈，我相信你们能懂起的，如果没理解到我再详说。
-![标注](http://upload-images.jianshu.io/upload_images/3453108-d082b6f230191c79.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![标注](./2.jpg)
 
 如上图所示，大框为父容器，九个小格子为子容器
 ```javascript
@@ -52,8 +52,8 @@ date: 2017-12-08 16:50
 </style>
 ```
 ##### 二、转动效果实现：（下面贴出vue文件的html和js代码，css代码没有。因为全贴出来太多了，如果想看详细代码，就到我的[github仓库](https://github.com/lingziyb/get-award)去观看或者下载）
-![转动前.png](http://upload-images.jianshu.io/upload_images/3453108-81429ffa16c6348f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-![转动后.png](http://upload-images.jianshu.io/upload_images/3453108-cf9510c4ad2307d1.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![转动前.png](./1.jpg)
+![转动后.png](./3.jpg)
 
 app.vue
 ```javascript

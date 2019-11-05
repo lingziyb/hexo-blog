@@ -2,119 +2,118 @@
 title: react-native遇坑的陈列
 date: 2019-07-07 14:34:24
 author: lingzi
-tags: 
-    - app
-    - react-native 
-    - typescript
-categories: 
-    - 技术
+tags:
+  - app
+  - react-native
+  - typescript
+categories:
+  - 技术
 ---
 
 ### 记录开始
 
-> 公司要做一个APP产品，自己会些皮毛，所以在开发的过程中还是遇到了比较多的问题（比如，一开始就安装不上啊，各种报红啊，怎么排查问题啊，轮播插件不响应啊，typescript不怎么会写啊...等等等）。顺便把mbox和typescript给融合进去了。
+> 公司要做一个 APP 产品，自己会些皮毛，所以在开发的过程中还是遇到了比较多的问题（比如，一开始就安装不上啊，各种报红啊，怎么排查问题啊，轮播插件不响应啊，typescript 不怎么会写啊...等等等）。顺便把 mbox 和 typescript 给融合进去了。
 
 ### 环境说明
 
-windows系统
-android studio安卓模拟器 / 安卓手机
+windows 系统
+android studio 安卓模拟器 / 安卓手机
 
 ### 记录罗列
 
-1. vscode 运行 react-native run android 报错，然后用android-studio运行就好了。
+1. vscode 运行 react-native run android 报错，然后用 android-studio 运行就好了。
 
-2. vscode里开发，代码 stylesheet里样式无提示。两个解决方案：
+2. vscode 里开发，代码 stylesheet 里样式无提示。两个解决方案：
 
-    - 解决方案一，改源码。
-    参考：https://github.com/microsoft/vscode-react-native/issues/379
+   - 解决方案一，改源码。
+     参考：https://github.com/microsoft/vscode-react-native/issues/379
 
-    ```javascript
-    // 源码
-    export function create<T extends NamedStyles<T> | NamedStyles<any>>(styles: T): T;    
-    // 改进后的：
-    export function create<T extends NamedStyles<T>>(styles: NamedStyles<T>): { [P in keyof T]: RegisteredStyle<T[P]> }; 
-    ```
+   ```javascript
+   // 源码
+   export function create<T extends NamedStyles<T> | NamedStyles<any>>(styles: T): T;
+   // 改进后的：
+   export function create<T extends NamedStyles<T>>(styles: NamedStyles<T>): { [P in keyof T]: RegisteredStyle<T[P]> };
+   ```
 
-    - 解决方案二，版本更新，最新版已修复此问题。（一开始我不知道已有版本不是最新版...）
-     
-    ```javascript
-    // 因为之前装的版本是："@types/react-native": "0.57.63"
-    export function create<T extends NamedStyles<T> | NamedStyles<any>>(styles: T): T;
+   - 解决方案二，版本更新，最新版已修复此问题。（一开始我不知道已有版本不是最新版...）
 
-    // 然后版本更新到："@types/react-native": "^0.60.0"
-    export function create<T extends NamedStyles<T> | NamedStyles<any>>(styles: T | NamedStyles<T>): T;
-    ```
+   ```javascript
+   // 因为之前装的版本是："@types/react-native": "0.57.63"
+   export function create<T extends NamedStyles<T> | NamedStyles<any>>(styles: T): T;
 
-3. 报错：` Unhandled JS Exception: TypeError: undefined is not an object (evaluating 'this._subscribableSubscriptions.forEach') `
+   // 然后版本更新到："@types/react-native": "^0.60.0"
+   export function create<T extends NamedStyles<T> | NamedStyles<any>>(styles: T | NamedStyles<T>): T;
+   ```
 
-    解决方案：
+3. 报错：`Unhandled JS Exception: TypeError: undefined is not an object (evaluating 'this._subscribableSubscriptions.forEach')`
 
-    ```javascript
-    // package.json文件里加上
-    "resolutions": {
-        "uglify-es": ">=3.3.4"
-      }
-    ```
-    
-    参考：https://github.com/facebook/react-native/issues/17348
+   解决方案：
 
-4. 不打开debug一切正常，当打开debug时报错：` window.deltaUrlToBlobUrl is not a function `。
+   ```javascript
+   // package.json文件里加上
+   "resolutions": {
+       "uglify-es": ">=3.3.4"
+     }
+   ```
 
-    ![error.png](./1.jpg)
-    
-    解决方案：localhost 改成 ip 地址。
-    
-    参考：https://stackoverflow.com/questions/49365217/react-native-debug-js-remotely-error-window-deltaurltobloburl-is-not-a-function
+   参考：https://github.com/facebook/react-native/issues/17348
 
-5. react-native-swiper，scrollBy用法。
+4. 不打开 debug 一切正常，当打开 debug 时报错：`window.deltaUrlToBlobUrl is not a function`。
+
+   ![error.png](./1.jpg)
+
+   解决方案：localhost 改成 ip 地址。
+
+   参考：https://stackoverflow.com/questions/49365217/react-native-debug-js-remotely-error-window-deltaurltobloburl-is-not-a-function
+
+5. react-native-swiper，scrollBy 用法。
 
    ![image.png](./2.jpg)
 
-6. react-native-swiper，轮播数据用map循环动态渲染，onIndexChanged 只执行一次：
+6. react-native-swiper，轮播数据用 map 循环动态渲染，onIndexChanged 只执行一次：
 
-    拒绝此类方案：拆东墙补西墙 https://www.jianshu.com/p/a46a57484946 ！
-    
-    解决方案：对list数组进行判断。(注：加下面四句代码就行了)
-    
-    ```javascript
-    render() {
-        if (HomeStore.list.length > 0) {     // ++++++++ 对list数组进行判断
-            return (
-                <View style={styles.content}>
+   拒绝此类方案：拆东墙补西墙 https://www.jianshu.com/p/a46a57484946 ！
 
-                    <Swiper style={styles.swiper} showsButtons={false}
-                        ref={swiper => { HomeStore.swiperDom = swiper }}
-                        loadMinimal={true}
-                        index={HomeStore.currentIndex}
-                        loop={false} showsPagination={false}
-                        automaticallyAdjustContentInsets={true}
-                        removeClippedSubviews={true}
-                        bounces={true}
-                        onIndexChanged={this.onIndexChanged} >
+   解决方案：对 list 数组进行判断。(注：加下面四句代码就行了)
 
-                        {
-                            HomeStore.list.map((item, i) => {
-                                return (
-                                    <Info item={item} key={i} index={i} list={HomeStore.list} />
-                                )
+   ```javascript
+   render() {
+       if (HomeStore.list.length > 0) {     // ++++++++ 对list数组进行判断
+           return (
+               <View style={styles.content}>
 
-                            })
-                        }
+                   <Swiper style={styles.swiper} showsButtons={false}
+                       ref={swiper => { HomeStore.swiperDom = swiper }}
+                       loadMinimal={true}
+                       index={HomeStore.currentIndex}
+                       loop={false} showsPagination={false}
+                       automaticallyAdjustContentInsets={true}
+                       removeClippedSubviews={true}
+                       bounces={true}
+                       onIndexChanged={this.onIndexChanged} >
 
-                    </Swiper>
+                       {
+                           HomeStore.list.map((item, i) => {
+                               return (
+                                   <Info item={item} key={i} index={i} list={HomeStore.list} />
+                               )
 
-                </View>
+                           })
+                       }
 
-            );
-        } else {   // ++++++++ 对list数组进行判断
-            return <View></View>;   // ++++++++ 对list数组进行判断
-        }   // ++++++++ 对list数组进行判断
-    }
-    ```
+                   </Swiper>
 
-7. 报错：`request:fail url not in domain list`。在获取地址时，用的腾讯api解析的经纬度，测试时没问题，上线了就报这个错了。
+               </View>
 
-    解决方案：微信公众平台，在“设置” -> “开发设置”中设置request合法域名，添加https://apis.map.qq.com。（本来以为他们是一家，不用加，结果还是要加。）
-    
-    参考：https://blog.csdn.net/weixin_43047977/article/details/84836501 。
+           );
+       } else {   // ++++++++ 对list数组进行判断
+           return <View></View>;   // ++++++++ 对list数组进行判断
+       }   // ++++++++ 对list数组进行判断
+   }
+   ```
 
+7. 报错：`request:fail url not in domain list`。在获取地址时，用的腾讯 api 解析的经纬度，测试时没问题，上线了就报这个错了。
+
+   解决方案：微信公众平台，在“设置” -> “开发设置”中设置 request 合法域名，添加https://apis.map.qq.com。（本来以为他们是一家，不用加，结果还是要加。）
+
+   参考：https://blog.csdn.net/weixin_43047977/article/details/84836501 。

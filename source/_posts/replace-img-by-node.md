@@ -38,7 +38,7 @@ date: 2019-11-05 12:22:21
 
 ### 具体实现
 
-- 循环文件夹，找到文件夹里所有要替换图片的 md 文件111：
+- 循环文件夹，找到文件夹里所有要替换图片的 md 文件：
 
 ```javascript
 const postDirPath = path.resolve(__dirname, "./source/_posts");
@@ -56,14 +56,14 @@ function main() {
 
 - 读取 md 文件内容。
 
-```
+```javascript
 const filePath = path.resolve(postDirPath, file.name);
 const fileData = fs.readFileSync(filePath, "utf8");
 ```
 
 - 正则匹配图片路径。
 
-```
+```javascript
 const regex = /\!\[.*\]\((http.*)\)/;
 
 if (!regex.exec(fileData)) return;
@@ -72,8 +72,7 @@ const url = regex.exec(fileData)[1];
 
 - 下载图片。
 
-```
-
+```javascript
 function download(url) {
   return new Promise((resolve, reject) => {
     const HTTP = url.includes("http://") ? http : https;
@@ -95,7 +94,7 @@ function download(url) {
 
 - 保存图片到本地目录。因为一篇 md 文章里有很多张图片，所以简单粗暴点，图片名称依次为：1.jpg、2.jpg、3.jpg...
 
-```
+```javascript
 function saveImg(dirName, imgFileName, imgData) {
   const dirPath = path.resolve(postDirPath, dirName);
   if (!fs.existsSync(dirPath)) fs.mkdirSync(dirPath);
@@ -105,7 +104,7 @@ function saveImg(dirName, imgFileName, imgData) {
 
 - 替换成相对路径
 
-```
+```javascript
 function replace(filePath, imgFileName, url) {
   const fileData = fs.readFileSync(filePath, "utf8");
   const newFile = fileData.replace(url, `./${imgFileName}.jpg`);

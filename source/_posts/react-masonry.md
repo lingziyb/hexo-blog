@@ -35,6 +35,6 @@ github：[https://github.com/lingziyb/react-masonry](https://github.com/lingziyb
 - list：数据
 - renderItem：渲染的每一个 item 组件
 
-```
+```javascript
 <Masonry column={3} list={list} renderItem={renderItem} />
 ```

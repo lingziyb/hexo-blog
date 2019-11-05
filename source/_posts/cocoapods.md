@@ -80,7 +80,8 @@ android studio / xcode
 
 最后解决了，虽然过程有点艰辛。解决办法是，`podfile` 完善如下（注意：AwesomeProject => 换成你自己的项目名）：
 
-```
+```javascript
+
 platform :ios, '9.0'
 project "AwesomeProject.xcodeproject"
 # require_relative '../node_modules/@react-native-community/cli-platform-ios/native_modules'

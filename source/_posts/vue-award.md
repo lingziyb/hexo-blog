@@ -1,5 +1,5 @@
 ---
-title: 抽奖转盘实现 ( vue + js + html + less )
+title: 抽奖转盘实现 ( vue + js + html + less ) 
 author: lingzi
 tags:
   - vue

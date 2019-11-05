@@ -1,5 +1,5 @@
 ---
-title: node把md文档中的图片地址换成相对地址
+title: 用node把md文档中的图片地址换成相对地址
 author: lingzi
 tags:
   - node

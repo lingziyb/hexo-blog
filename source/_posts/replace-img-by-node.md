@@ -38,9 +38,9 @@ date: 2019-11-05 12:22:21
 
 ### 具体实现
 
-- 循环文件夹，找到文件夹里所有要替换图片的 md 文件：
+- 循环文件夹，找到文件夹里所有要替换图片的 md 文件111：
 
-```
+```javascript
 const postDirPath = path.resolve(__dirname, "./source/_posts");
 
 function main() {

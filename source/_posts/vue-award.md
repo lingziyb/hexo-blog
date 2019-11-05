@@ -25,11 +25,11 @@ date: 2017-12-08 16:50
 
 如上图所示，大框为父容器，九个小格子为子容器
 
-```javascript
+```html
 <div class="parent">
     <div class="child child1"></div>
     <div class="child child2"></div>
-    <div class="child child3"></div>
+    <div class="child child3"></div> 
     .......
     <div class="child child9" id="start"></div>
 </div>

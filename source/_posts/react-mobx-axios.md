@@ -14,12 +14,12 @@ date: 2018-08-06 00:13
 > 之前做过 react 项目，但是没有全面搭过框架，顺便研究一波 mobx。
 > 项目代码 github 地址：https://github.com/lingziyb/react-mobx-demo
 
-## 一、选 react 脚手架
+### 一、选 react 脚手架
 
 - 想：自己搭整个框架还是比较费劲的，所以首先想到用它的脚手架来初始化一个大概的框架结构。
 - 搜：开始搜脚手架，最出名的就是 facebook 官方出版的[create-react-app](https://github.com/facebook/create-react-app)，那我们就用这个。
 
-## 二、使用`create-react-app`初始化项目
+### 二、使用`create-react-app`初始化项目
 
 工具会帮你初始化一个简单基本的项目并且会自动帮你安装项目所需要的各种依赖
 
@@ -32,7 +32,7 @@ date: 2018-08-06 00:13
 此时浏览器会自动访问  [http://localhost:3000/](http://localhost:3000/)，你会看到一个  `react`  的欢迎界面，如下：代表你的项目已经正常运行了。
 ![运行后的页面.png](./1.jpg)
 
-## 三、配置项
+### 三、配置项
 
 #### 1. 展开配置项
 
@@ -97,7 +97,7 @@ date: 2018-08-06 00:13
 
 - 修改`webpack.config.prod.js` ，同理，在`rules`字段中更改以上代码
 
-## 四、引入路由
+### 四、引入路由
 
 #### 1. 更改 src 目录结构
 
@@ -250,7 +250,7 @@ export default App;
 
 ![about页](./5.jpg)
 
-## 五、添加数据管理`mobx`
+### 五、添加数据管理`mobx`
 
 #### 1. 按照依赖
 
@@ -398,7 +398,7 @@ export default About;
 
 ![about页.png](./7.jpg)
 
-## 六、数据请求`axios`
+### 六、数据请求`axios`
 
 ```javascript
   yarn add axios

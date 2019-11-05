@@ -17,13 +17,13 @@ date: 2019-11-05 12:22:21
 
 - 一般 md 图片都长这样的：
 
-```
+```md
 ![抽奖转盘](http://upload-images.jianshu.io/upload_images/3453108-d3d4ecbe2309e96e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 ```
 
 - 替换之后它长这样的：
 
-```
+```md
 ![抽奖转盘](./1.jpg)
 ```
 

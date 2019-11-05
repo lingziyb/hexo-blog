@@ -53,7 +53,8 @@ date: 2017-12-08 16:50
 </style>
 ```
 
-##### 二、转动效果实现：（下面贴出 vue 文件的 html 和 js 代码，css 代码没有。因为全贴出来太多了，如果想看详细代码，就到我的[github 仓库](https://github.com/lingziyb/get-award)去观看或者下载）
+##### 二、转动效果实现：
+（下面贴出 vue 文件的 html 和 js 代码，css 代码没有。因为全贴出来太多了，如果想看详细代码，就到我的[github 仓库](https://github.com/lingziyb/get-award)去观看或者下载）
 
 ![转动前.png](./1.jpg)
 ![转动后.png](./3.jpg)

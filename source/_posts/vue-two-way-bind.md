@@ -80,7 +80,8 @@ class Vue {
 ```
 
 - 步骤二：index.js 里实现双向绑定
-  1.  实现一个监听器 Observer，用来劫持监听所有属性，若有变动，就通知订阅者。
+
+1. 实现一个监听器 Observer，用来劫持监听所有属性，若有变动，就通知订阅者。
 
 ```javascript
 class Vue {
@@ -112,7 +113,7 @@ class Vue {
 }
 ```
 
-2.  实现一个订阅者 Watcher，每一个 Watcher 都绑定一个更新函数，Watcher 可以收到属性的变化通知，并执行相应的更新函数，从而更新视图。
+2. 实现一个订阅者 Watcher，每一个 Watcher 都绑定一个更新函数，Watcher 可以收到属性的变化通知，并执行相应的更新函数，从而更新视图。
 
 ```javascript
 class Vue {

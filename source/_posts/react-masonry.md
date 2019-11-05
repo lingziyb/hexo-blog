@@ -20,6 +20,8 @@ react 瀑布流
 
 github：[https://github.com/lingziyb/react-masonry](https://github.com/lingziyb/react-masonry)
 
+[ 注：数据是用的百度图片网站的 ]
+
 ### 目录
 
 - src：页面代码

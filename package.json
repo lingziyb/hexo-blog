@@ -10,7 +10,8 @@
     "dev-with-html-prefix": "node -r ./hack-hexo.js node_modules/hexo/bin/hexo s",
     "build": "hexo generate -f",
     "build-with-html-prefix": "node -r ./hack-hexo.js node_modules/hexo/bin/hexo g -f",
-    "publish": "hexo clean && hexo d -g"
+    "publish": "hexo clean && hexo d -g",
+    "publish-html": "node -r ./hack-hexo.js node_modules/hexo/bin/hexo clean && node -r ./hack-hexo.js node_modules/hexo/bin/hexo d -g"
   },
   "dependencies": {
     "hexo": "^3.9.0",

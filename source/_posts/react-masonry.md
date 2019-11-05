@@ -1,0 +1,36 @@
+---
+title: react-masonry
+author: lingzi
+tags:
+  - vue
+categories:
+  - 技术
+date: 2019-11-05 21:09:35
+---
+
+
+# react-masonry
+
+react瀑布流
+
+哒哒哒：
+![酱紫的](http://static.lemonof.com/react-masonry/readme.png)
+
+
+### 目录
+- src：页面代码
+- components：瀑布流组件
+
+### 使用
+
+传三个参数：
+- column: 显示多少行
+- list：数据
+- renderItem：渲染的每一个item组件
+
+```
+<Masonry column={3} list={list} renderItem={renderItem} />
+```
+
+### 项目代码
+github：[https://github.com/lingziyb/react-masonry](https://github.com/lingziyb/react-masonry)

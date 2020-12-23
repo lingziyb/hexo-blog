@@ -1,5 +1,5 @@
 ---
-title: special-skills
+title: 探寻特殊技能
 author: lingzi
 tags:
   - 特殊技能

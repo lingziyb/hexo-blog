@@ -31,12 +31,12 @@ date: 2020-12-23 16:44:14
 ![friend1](./user1-1.png)
 ![friend1](./user1-2.png)
 
-- user2回复：
+- friend2回复：
 ![friend2](./user2-1.png)
 
-- user3回复：
+- friend3回复：
 ![friend3](./user3-1.png)
 
-- user4回复：
+- friend4回复：
 ![friend4](./user4-1.png)
 

@@ -17,7 +17,7 @@ jobs:
           npm run build
           docker build ./ -t lingzi-blog-docker
           docker run -p 8081:80 lingzi-blog-docker
-      - uses: manyuanrong/setup-ossutil@v1.0
+      - uses: manyuanrong/setup-ossutil@v2.0
         with:
           endpoint: "oss-cn-hongkong.aliyuncs.com"
           access-key-id: ${{secrets.ACCESS_KEY_ID}}

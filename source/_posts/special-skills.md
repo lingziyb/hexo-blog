@@ -27,16 +27,16 @@ date: 2020-12-23 16:44:14
 ![问题描述](./1.jpg)
 你们观察到了什么？
 
-- user1回复：
-![user1](./user1-1.png)
-![user1](./user1-2.png)
+- friend1回复：
+![friend1](./user1-1.png)
+![friend1](./user1-2.png)
 
 - user2回复：
-![user2](./user2-1.png)
+![friend2](./user2-1.png)
 
 - user3回复：
-![user3](./user3-1.png)
+![friend3](./user3-1.png)
 
 - user4回复：
-![user4](./user4-1.png)
+![friend4](./user4-1.png)
 

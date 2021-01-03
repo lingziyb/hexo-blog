@@ -3,6 +3,7 @@ title: 喜欢的言论和段子-1
 author: lingzi
 tags:
   - 好句收藏
+  - 摘录
 categories:
   - 人生
 date: 2020-12-29 21:17:44

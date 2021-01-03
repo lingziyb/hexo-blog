@@ -2,9 +2,9 @@
 title: 领袖的本质
 author: lingzi
 tags:
-  - 认知
-categories:
   - TED
+categories:
+  - 认知
 date: 2021-01-03 22:18:18
 ---
 

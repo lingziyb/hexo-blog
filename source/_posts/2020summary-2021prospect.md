@@ -2,9 +2,9 @@
 title: 2020总结-2021展望
 author: lingzi
 tags:
-  - vue
+  - 计划
 categories:
-  - 技术
+  - 畅想未来
 date: 2021-01-09 23:34:25
 ---
 

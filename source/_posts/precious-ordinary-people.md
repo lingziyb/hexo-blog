@@ -10,7 +10,7 @@ categories:
 date: 2021-01-28 00:16:55
 ---
 
-原文：https://mp.weixin.qq.com/s/8XdMlBDLWyBIGBJum1thGg
+> 原文：[为什么我们要培养珍贵的普通人？| 欧阳艳琴 @TEDxGuangzhou](https://mp.weixin.qq.com/s/8XdMlBDLWyBIGBJum1thGg)
 
 ![pic](./1.jpg)
 

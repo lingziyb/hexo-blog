@@ -41,4 +41,5 @@ hexo deploy
 
 注：
 1 新建文章hexo new "xxx"，同时创建图片文件夹
+
 2 git push 自动发布
